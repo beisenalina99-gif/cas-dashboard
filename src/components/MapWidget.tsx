@@ -200,17 +200,17 @@ export default function MapWidget({
       attributionControl: false,
     });
 
-    const stadia = L.tileLayer(stadiaTileUrl(), {
-      maxZoom: 20,
-      attribution: '&copy; OpenStreetMap &copy; Stadia Maps',
-    });
+    const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
     stadia.addTo(map);
     let usedFallback = false;
     stadia.on('tileerror', () => {
       if (usedFallback) return;
       usedFallback = true;
       map.removeLayer(stadia);
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         subdomains: 'abcd',
         attribution: '&copy; OpenStreetMap &copy; CARTO',
