@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","properties":{"id":"taraz","name":"г. Тараз"},"geometry":{"type":"Polygon","coordinates":[[[72.78,44.17],[72.96,44.17],[72.96,44.27],[72.78,44.27],[72.78,44.17]]]}},
+    {"type":"Feature","properties":{"id":"baizak","name":"Байзакский"},"geometry":{"type":"Polygon","coordinates":[[[72.42,44.27],[72.78,44.27],[72.78,44.52],[72.42,44.52],[72.42,44.27]]]}},
+    {"type":"Feature","properties":{"id":"zhambyl","name":"Жамбылский"},"geometry":{"type":"Polygon","coordinates":[[[72.96,44.27],[73.34,44.27],[73.34,44.52],[72.96,44.52],[72.96,44.27]]]}},
+    {"type":"Feature","properties":{"id":"merke","name":"Меркенский"},"geometry":{"type":"Polygon","coordinates":[[[71.88,44.0],[72.42,44.0],[72.42,44.27],[71.88,44.27],[71.88,44.0]]]}},
+    {"type":"Feature","properties":{"id":"zhualy","name":"Жуалынский"},"geometry":{"type":"Polygon","coordinates":[[[71.88,43.72],[72.42,43.72],[72.42,44.0],[71.88,44.0],[71.88,43.72]]]}},
+    {"type":"Feature","properties":{"id":"sarysu","name":"Сарысуский"},"geometry":{"type":"Polygon","coordinates":[[[73.34,43.72],[74.18,43.72],[74.18,44.52],[73.34,44.52],[73.34,43.72]]]}},
+    {"type":"Feature","properties":{"id":"moiynkum","name":"Мойынқумский"},"geometry":{"type":"Polygon","coordinates":[[[72.42,44.52],[73.34,44.52],[73.34,45.22],[72.42,45.22],[72.42,44.52]]]}},
+    {"type":"Feature","properties":{"id":"ryskulov","name":"Т. Рыскуловский"},"geometry":{"type":"Polygon","coordinates":[[[72.42,43.72],[73.34,43.72],[73.34,44.0],[72.42,44.0],[72.42,43.72]]]}},
+    {"type":"Feature","properties":{"id":"shu","name":"Шуский"},"geometry":{"type":"Polygon","coordinates":[[[73.5,44.0],[74.1,44.0],[74.1,44.45],[73.5,44.45],[73.5,44.0]]]}},
+    {"type":"Feature","properties":{"id":"talas","name":"Таласский"},"geometry":{"type":"Polygon","coordinates":[[[71.2,44.85],[72.1,44.85],[72.1,45.35],[71.2,45.35],[71.2,44.85]]]}},
+    {"type":"Feature","properties":{"id":"korday","name":"Кордайский"},"geometry":{"type":"Polygon","coordinates":[[[74.4,43.0],[75.2,43.0],[75.2,43.55],[74.4,43.55],[74.4,43.0]]]}},
+    {"type":"Feature","properties":{"id":"zhanatas","name":"Жанатас"},"geometry":{"type":"Polygon","coordinates":[[[69.75,43.55],[70.45,43.55],[70.45,44.0],[69.75,44.0],[69.75,43.55]]]}}
+  ]
+}
