@@ -158,12 +158,6 @@ interface MapWidgetProps {
   pathOverlays?: MapPathOverlay[];
 }
 
-function stadiaTileUrl(): string {
-  const key = import.meta.env.VITE_STADIA_API_KEY as string | undefined;
-  const base = 'https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png';
-  return key ? `${base}?api_key=${encodeURIComponent(key)}` : base;
-}
-
 export default function MapWidget({
   markers = [],
   districts = [],
@@ -204,12 +198,12 @@ export default function MapWidget({
     maxZoom: 19,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 });
-    stadia.addTo(map);
+    osm.addTo(map);
     let usedFallback = false;
-    stadia.on('tileerror', () => {
+    osm.on('tileerror', () => {
       if (usedFallback) return;
       usedFallback = true;
-      map.removeLayer(stadia);
+      map.removeLayer(osm);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         subdomains: 'abcd',
@@ -219,7 +213,7 @@ export default function MapWidget({
 
     L.control
       .attribution({ prefix: false })
-      .addAttribution('&copy; OpenStreetMap &copy; Stadia Maps')
+      .addAttribution('&copy; OpenStreetMap &copy; osm Maps')
       .addTo(map);
 
     mapRef.current = map;
